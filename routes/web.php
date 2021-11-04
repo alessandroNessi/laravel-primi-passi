@@ -22,6 +22,13 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
+Route::get('/header_menu', function () {
+    $data=[
+        "refs"=>["","chi_sono","dettagli_oggetto"]
+    ];
+    return view('header_menu', $data);
+});
+
 Route::get('/chi_sono', function () {
     return view('chi_sono');
 });

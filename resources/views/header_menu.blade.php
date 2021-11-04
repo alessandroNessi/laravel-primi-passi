@@ -7,13 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    @include('header_menu');
-    <p>il mio nome è {{$nome}}, {{$cognome}}</p>
-    <p>le mie proprieà sono:</p>
+    <h1>Ciao mondo</h1>
     <ul>
-        @foreach ($proprietà as $item)
-            <li>{{$item}}</li>    
-        @endforeach
+    @foreach ($refs as $ref)
+        @if ($ref=='')
+            <a href="/{{$ref}}">home</a>    
+        @else
+            <a href="/{{$ref}}">{{$ref}}</a>
+        @endif
+    @endforeach
     </ul>
 </body>
 </html>

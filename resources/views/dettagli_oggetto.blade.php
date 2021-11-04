@@ -7,13 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ciao mondo</h1>
-    <p>il mio nome è {{$nome}}, {{$cognome}}</p>
-    <p>le mie proprieà sono:</p>
-    <ul>
-        @foreach ($proprietà as $item)
-            <li>{{$item}}</li>    
-        @endforeach
-    </ul>
+    <img src="https://picsum.photos/200/300" alt="lorem picsium">
 </body>
 </html>

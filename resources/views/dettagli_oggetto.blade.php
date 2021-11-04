@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    @include('header_menu')
+
+{{-- estendo il file di layout --}}
+@extends('layout.master')
+{{-- passo a titolo dettagli --}}
+@section('title','dettagli')
+{{-- passo al contenuto quello che è compreso tra @section e @endsection --}}
+@section('content')
     <img src="https://picsum.photos/200/300" alt="lorem picsium">
-</body>
-</html>
+@endsection

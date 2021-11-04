@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    @include('header_menu')
+
+{{-- estendo il file di layout --}}
+@extends('layout.master')
+{{-- passo a titolo homepage --}}
+@section('title','homepage')
+{{-- passo al contenuto quello che è compreso tra @section e @endsection --}}
+@section('content')
     <p>il mio nome è {{$nome}}, {{$cognome}}</p>
     <p>le mie proprieà sono:</p>
     <ul>
@@ -15,5 +12,4 @@
             <li>{{$item}}</li>    
         @endforeach
     </ul>
-</body>
-</html>
+@endsection

@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    @include('header_menu');
+    @include('header_menu')
     <p>il mio nome è {{$nome}}, {{$cognome}}</p>
     <p>le mie proprieà sono:</p>
     <ul>

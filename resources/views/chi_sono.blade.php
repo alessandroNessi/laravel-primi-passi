@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('header_menu')
     <h1>sono io!</h1>
 </body>
 </html>

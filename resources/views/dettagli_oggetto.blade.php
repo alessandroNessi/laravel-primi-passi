@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('header_menu')
     <img src="https://picsum.photos/200/300" alt="lorem picsium">
 </body>
 </html>

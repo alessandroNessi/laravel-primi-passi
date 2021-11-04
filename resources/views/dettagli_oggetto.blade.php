@@ -9,7 +9,6 @@
 <body>
     <h1>Ciao mondo</h1>
     <p>il mio nome è {{$nome}}, {{$cognome}}</p>
-    <a href="/chi_sono">portami a chi sono</a>
     <p>le mie proprieà sono:</p>
     <ul>
         @foreach ($proprietà as $item)

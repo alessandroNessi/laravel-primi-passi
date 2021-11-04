@@ -21,3 +21,11 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/chi_sono', function () {
+    return view('chi_sono');
+});
+
+Route::get('/dettagli_oggetto', function () {
+    return view('dettagli_oggetto');
+});
